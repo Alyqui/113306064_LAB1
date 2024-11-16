@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About -- 110356037</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        td[colspan="3"] {
+            text-align: center;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        textarea {
+            width: 95%;
+            resize: none;
+        }
+        input[type="text"], input[type="email"], select, input[type="date"] {
+            width: 95%;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 表格標題 -->
+        <tr>
+            <td colspan="3">About -- 113306064</td>
+        </tr>
+        <!-- 第一行 -->
+        <tr>
+            <td rowspan="3" style="width: 30%; text-align: center;">
+                <img src="fox.jpg" alt="personal photo">
+                <p>personal photo</p>
+            </td>
+            <td colspan="2">
+                Name: <input type="text">
+                Gender: 
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>
+                County: 
+                <select>
+                    <option value="Taipei">Taipei</option>
+                    <option value="Tainan">Tainan</option>
+                    <option value="Taichung">Taichung</option>
+                    <option value="Taoyuan">Taoyuan</option>
+                </select>
+            </td>
+            <td>Birthday: <input type="date"></td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td colspan="2">E-mail: <input type="email"></td>
+            <td></td>
+        </tr>
+        <!-- Hobby -->
+        <tr>
+            <td>Hobby:</td>
+            <td colspan="2">
+                <label><input type="checkbox" name="hobby" value="Swimming"> Swimming</label>
+                <label><input type="checkbox" name="hobby" value="Volleyball"> Volleyball</label>
+                <label><input type="checkbox" name="hobby" value="Movie"> Movie</label>
+                <label><input type="checkbox" name="hobby" value="Game"> Game</label>
+                <label><input type="checkbox" name="hobby" value="Sleep"> Sleep</label>
+            </td>
+        </tr>
+        <!-- Skill -->
+        <tr>
+            <td>Skill:</td>
+            <td colspan="2">
+                <label><input type="checkbox" name="skill" value="Java"> Java</label>
+                <label><input type="checkbox" name="skill" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skill" value="Python"> Python</label>
+                <label><input type="checkbox" name="skill" value="Microsoft Office"> Microsoft Office</label>
+                <label><input type="checkbox" name="skill" value="Premiere"> Premiere</label>
+            </td>
+        </tr>
+        <!-- Say Something -->
+        <tr>
+            <td>Say Something:</td>
+            <td colspan="2">
+                <textarea rows="4" placeholder="Say something here."></textarea>
+            </td>
+        </tr>
+    </table>
+    <!-- 按鈕 -->
+    <div class="button-container">
+        <button type="submit">提交</button>
+        <button type="reset">重設</button>
+    </div>
+</body>
+</html>
